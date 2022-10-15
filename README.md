@@ -248,3 +248,9 @@ zfs-auto-snapshot --verbose --label=prerollback -r //
 # rollback to a specific snapshot
 zfs rollback <snapshotname>
 ```
+
+### Deploy Mikrotik CHR as VM
+```
+wget https://raw.githubusercontent.com/romspeu/pve-builds/main/scripts/chr-deploy.sh -c -O chr-deploy.sh && chmod +x chr-deploy.sh 
+./chr-deploy.sh
+```
