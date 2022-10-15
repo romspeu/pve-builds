@@ -23,7 +23,7 @@
 # Note: will automatically run the install-post.sh script
 #
 # Usage:
-# curl -O https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/debian-2-proxmox/debian9-2-proxmox5.sh && chmod +x debian9-2-proxmox5.sh
+# curl -O https://raw.githubusercontent.com/romspeu/pve-builds/master/debian-2-proxmox/debian9-2-proxmox5.sh && chmod +x debian9-2-proxmox5.sh
 # ./debian9-2-proxmox5.sh
 #
 ################################################################################
@@ -136,7 +136,7 @@ update-grub
 echo "Done installing Proxmox VE"
 
 echo "Fetching postinstall script"
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/install-post.sh -c -O install-post.sh && chmod +x install-post.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/install-post.sh -c -O install-post.sh && chmod +x install-post.sh
 if grep -q '#!/usr/bin/env bash' "install-post.sh"; then
   bash install-post.sh
 fi

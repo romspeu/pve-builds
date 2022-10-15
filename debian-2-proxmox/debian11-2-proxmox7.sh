@@ -25,7 +25,7 @@
 # Thank you @floco
 #
 # Usage:
-# curl -O https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/debian-2-proxmox/debian11-2-proxmox7.sh && chmod +x debian11-2-proxmox7.sh
+# curl -O https://raw.githubusercontent.com/romspeu/pve-builds/master/debian-2-proxmox/debian11-2-proxmox7.sh && chmod +x debian11-2-proxmox7.sh
 # ./debian11-2-proxmox7.sh
 #
 #

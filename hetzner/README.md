@@ -16,13 +16,13 @@ will use nvme, if sda is a spinning disk
 
 ### Proxmox VE (PVE)
 ```
-curl -O https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/vnc-install-proxmox.sh && chmod +x vnc-install-proxmox.sh
+curl -O https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/vnc-install-proxmox.sh && chmod +x vnc-install-proxmox.sh
 ./vnc-install-proxmox.sh
 ```
 
 ### Proxmox Backup Server (PBS)
 ```
-curl -O https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/vnc-install-proxmox.sh && chmod +x vnc-install-proxmox.sh
+curl -O https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/vnc-install-proxmox.sh && chmod +x vnc-install-proxmox.sh
 ./vnc-install-proxmox.sh pbs
 ```
 
@@ -50,12 +50,12 @@ slog and L2ARC if ssd is present, no nvme and hdd is present
 * Connect via ssh/terminal to the rescue system running on your server and run either of the following
 * To Install Proxmox VE (PVE)
 ````
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/installimage-proxmox.sh -c -O installimage-proxmox.sh && chmod +x installimage-proxmox.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/installimage-proxmox.sh -c -O installimage-proxmox.sh && chmod +x installimage-proxmox.sh
 ./installimage-proxmox.sh "your.hostname.here"
 ````
 * To Install Proxmox Backup Server (PBS)
 ````
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/installimage-proxmox.sh -c -O installimage-proxmox.sh && chmod +x installimage-proxmox.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/installimage-proxmox.sh -c -O installimage-proxmox.sh && chmod +x installimage-proxmox.sh
 ./installimage-proxmox.sh "your.hostname.here" pbs
 ````
 * Reboot
@@ -63,7 +63,7 @@ wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/
 
 ## LVM to ZFS
 ````
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/zfs/lvm-2-zfs.sh -c -O lvm-2-zfs.sh  && chmod +x lvm-2-zfs.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/zfs/lvm-2-zfs.sh -c -O lvm-2-zfs.sh  && chmod +x lvm-2-zfs.sh
  ./lvm-2-zfs.sh && rm lvm-2-zfs.sh
 ````
 * Reboot
@@ -71,7 +71,7 @@ wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/zfs/lvm-
 
 ## NETWORKING (vmbr0 vmbr1)
 ```
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/networking/network-configure.sh -c -O network-configure.sh && chmod +x network-configure.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/networking/network-configure.sh -c -O network-configure.sh && chmod +x network-configure.sh
 ./network-configure.sh && rm network-configure.sh
 ```
 * Reboot
@@ -79,5 +79,5 @@ wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/networki
 
 ## OPTIONAL: POST INSTALL OPTIMISATION
 ```
-wget https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/install-post.sh -c -O install-post.sh && chmod +x install-post.sh
+wget https://raw.githubusercontent.com/romspeu/pve-builds/master/install-post.sh -c -O install-post.sh && chmod +x install-post.sh
 ./install-post.sh && rm install-post.sh

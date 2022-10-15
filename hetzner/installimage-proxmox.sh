@@ -456,12 +456,12 @@ fi
 
 if [ "$OS" == "PBS" ] ; then
   if [ ! -f postinstall_file="/root/pbs" ] ; then
-    wget "https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/pbs" -c -O /root/pbs
+    wget "https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/pbs" -c -O /root/pbs
   fi
   postinstall_file="/root/pbs"
 else
   if [ ! -f postinstall_file="/root/pve" ] ; then
-    wget "https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/hetzner/pve" -c -O /root/pve
+    wget "https://raw.githubusercontent.com/romspeu/pve-builds/master/hetzner/pve" -c -O /root/pve
   fi
   postinstall_file="/root/pve"
 fi

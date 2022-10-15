@@ -35,7 +35,7 @@
 # NOTE: WILL  DESTROY ALL DATA ON DEVICES SPECIFED
 #
 # Usage:
-# curl -O https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/zfs/createzfs.sh && chmod +x createzfs.sh
+# curl -O https://raw.githubusercontent.com/romspeu/pve-builds/master/zfs/createzfs.sh && chmod +x createzfs.sh
 # ./createzfs.sh poolname /dev/sda /dev/sdb
 #
 ################################################################################

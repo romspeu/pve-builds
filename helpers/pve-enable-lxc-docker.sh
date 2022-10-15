@@ -20,7 +20,7 @@
 # ie. fresh ubuntu lts server with https://github.com/extremeshok/xshok-docker
 #
 # Usage:
-# curl https://raw.githubusercontent.com/extremeshok/xshok-proxmox/master/helpers/pve-enable-lxc-docker.sh --output /usr/sbin/pve-enable-lxc-docker && chmod +x /usr/sbin/pve-enable-lxc-docker
+# curl https://raw.githubusercontent.com/romspeu/pve-builds/master/helpers/pve-enable-lxc-docker.sh --output /usr/sbin/pve-enable-lxc-docker && chmod +x /usr/sbin/pve-enable-lxc-docker
 # pve-enable-lxc-docker container_id
 #
 ################################################################################
