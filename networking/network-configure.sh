@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 ################################################################################
-# This is property of eXtremeSHOK.com
+# This is property of romsp.eu
 # You are free to use, modify and distribute, however you may not remove this notice.
-# Copyright (c) Adrian Jon Kriel :: admin@extremeshok.com
+# Copyright (c) Adrian Jon Kriel :: 
 ################################################################################
 #
 # Script updates can be found at: https://github.com/extremeshok/xshok-proxmox
@@ -119,7 +119,7 @@ IFS='.' read -r -a default_v4ip_array <<< "$default_v4ip"
 cp "$network_interfaces_file" "${network_interfaces_file}.$(date +"%Y-%m-%d_%H-%M-%S")"
 
 cat > "$network_interfaces_file" <<EOF
-###### eXtremeSHOK.com
+###### romsp.eu
 
 ### LOOPBACK ###
 auto lo
@@ -239,7 +239,7 @@ INTERFACESv4="vmbr0 vmbr1"
 EOF
 
 cat > /etc/dhcp/dhcpd.conf <<EOF
-### eXtremeSHOK.com
+### romsp.eu
 # https://linux.die.net/man/5/dhcpd.conf
 
 ddns-update-style none;

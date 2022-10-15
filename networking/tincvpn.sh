@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 ################################################################################
-# This is property of eXtremeSHOK.com
+# This is property of romsp.eu
 # You are free to use, modify and distribute, however you may not remove this notice.
-# Copyright (c) Adrian Jon Kriel :: admin@extremeshok.com
+# Copyright (c) Adrian Jon Kriel :: 
 ################################################################################
 #
 # Script updates can be found at: https://github.com/extremeshok/xshok-proxmox
@@ -207,7 +207,7 @@ chmod 755 /etc/tinc/xsvpn/tinc-down
 
 cat <<EOF > /etc/systemd/system/tinc-xsvpn.service
 [Unit]
-Description=eXtremeSHOK.com Tinc VPN
+Description=romsp.eu Tinc VPN
 After=network.target
 
 [Service]

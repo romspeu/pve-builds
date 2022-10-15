@@ -1,8 +1,8 @@
-# xshok-proxmox :: eXtremeSHOK.com Proxmox (pve)
+# xshok-proxmox :: romsp.eu Proxmox (pve)
 
 Scripts for working with and optimizing proxmox
 
-## Maintained and provided by <https://eXtremeSHOK.com>
+## Maintained and provided by <https://romsp.eu>
 
 ### Please Submit Patches / Pull requests
 
