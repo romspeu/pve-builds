@@ -301,7 +301,7 @@ cat > "/etc/dhcp/hosts.public" <<EOF
 #    fixed-address 11.22.33.44;
 #  }
 #  host another.examle.com {
-#    option host-name "another.example.com"
+#    option host-name "another.example.com";
 #    hardware ethernet 00:EE:DD:CC:BB:AA;
 #    fixed-address 44.33.22.11;
 #  }
