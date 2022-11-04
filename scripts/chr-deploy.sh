@@ -38,14 +38,13 @@ echo ""
 read -p "Please Enter free vm ID to use:" vmID
 echo ""
 # Create storage dir for VM if needed.
-### CHANGE TO SSD
-if [ -d /mnt/pve/ssd-local/images/$vmID ] 
+if [ -d /var/lib/vz/images/$vmID ] 
 then
     echo "-- VM Directory exists! Ideally try another vm ID!"
     read -p "Please Enter free vm ID to use:" vmID
 else
     echo "-- Creating VM image dir!"
-    mkdir /mnt/pve/ssd-local/images/$vmID
+    mkdir /var/lib/vz/images/$vmID
 fi
 # Creating qcow2 image for CHR.
 echo "-- Converting image to qcow2 format "
@@ -53,7 +52,7 @@ qemu-img convert \
     -f raw \
     -O qcow2 \
     /root/temp/chr-$version.img \
-    /mnt/pve/ssd-local/images/$vmID/vm-$vmID-disk-1.qcow2
+    /var/lib/vz/images/$vmID/vm-$vmID-disk-1.qcow2
 # Creating VM
 echo "-- Creating new CHR VM"
 qm create $vmID \
@@ -65,5 +64,5 @@ qm create $vmID \
   --onboot no \
   --sockets 1 \
   --cores 1 \
-  --virtio0 ssd-local:$vmID/vm-$vmID-disk-1.qcow2
+  --virtio0 local:$vmID/vm-$vmID-disk-1.qcow2
 echo "############## End of Script ##############"
