@@ -65,5 +65,5 @@ qm create $vmID \
   --onboot no \
   --sockets 1 \
   --cores 1 \
-  --virtio0 local:$vmID/vm-$vmID-disk-1.qcow2
+  --virtio0 ssd-local:$vmID/vm-$vmID-disk-1.qcow2
 echo "############## End of Script ##############"
